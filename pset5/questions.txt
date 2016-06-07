@@ -1,0 +1,62 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis
+    is a lung disease caused by inhalation of very fine
+    silicate or quartz dust.
+    
+1.  getrusage() returns resource usage measures for "who"
+    which can be the following:
+    RUSAGE_SELF - sum of all resources used by all threads
+                  in the process.
+    RUSAGE_CHILDREN - returns resource usage statistics for all
+                      children of the calling process that have
+                      terminated and been waited for.
+    RUSAGE_THREAD - returns resource usage for the calling thread.
+
+2.  16 members
+3.  First, the getrusage() argument expects a struct rusage
+    pointer, so we need to pass in a struct rusage address.
+    Second, it may not seem like it but we need to directly
+    save the data we get from getrusage so the speller can
+    use it easily for the calculate function.
+    
+4.  The for loop indicates string reading until the end of file.
+    it uses fgetc which gets character per character in each line
+    and checks whether the character read is indeed an alphabet or
+    an apostrophe. If true then the process will append each character
+    therefore forming a word and is null terminated with '\0'
+    
+    if the character read is a number then ignores it and proceeds
+    to reading the next line.
+    
+    if we've reached the end of a word, we must terminate it and
+    immediately pass check() function to determine if it is in the
+    dictionary, calculating check() time at the same time.
+    if check returns false, then print the string a misspelled.
+    
+5.  Using fscanf and formatting input automatically to string
+    may prevent us determining newline characters and may include
+    it to word appending. The program must know when to call check
+    if it has encountered a proper word terminated by '\0', thus
+    it is safer to use fgetc().
+    
+6.  Using constant can preserve data passed in to different
+    functions, especially if we are passing by values which
+    the function called will only create a copy for itself.
+    
+7.  I used trie based from the cs50 walkthrough.
+    It contains a boolean variable to determine  a
+    valid word and a pointer to array, the size of alphabet + 1
+    for the apostrophe. The structure does not save each character
+    of each word but creates a path of address pointers to follow
+    based from the array index computation from the words as its keys.
+    
+8.  The total time was around 48 - 50 when using the large.txt
+    dictionary and large.txt as its text file to check for misspellings.
+    
+9.  I changed some lines in the load function where it reads
+    strings from the dictionary line by line.
+    
+10. Yes. It could be from the structure itself. It's giving me
+    a time complexity of O(n) in the worst case for load
+    function and check function. These two have almost the same
+    process of storing keys in the structure and checking whether
+    a key is valid.

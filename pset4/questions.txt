@@ -1,0 +1,19 @@
+0.  jpg = 16.7 million colors(24-bit color or more), gif and png(both 8-bit color) = 256 colors, bmp = 24-bit color 
+1.  GIF
+2.  Lossy compression reduces size by sacrificing qualit. Lossless compression allows for no detriment to the image quality.
+3.  JPG
+4.  FAT retains keeps track of allocation status of clusters of sectors.
+5.  We can simply overwrite existing allocation tables with other data.
+6.  C header file that contains declarations of different integer types with specified widths(the number of bits to store a value in a pure binary system).
+7.  We can minimize the use of large size datatypes if we only need a smaller size, and we can easily manipulate specific bits and bytes.
+8.  BYTE = 1 byte; DWORD = 4 bytes(unsigned); LONG = 4 bytes; WORD = 2 bytes.
+9.  0x42 and 0x4d = B and M in ASCII.
+10. bfSize refers to the full size of the bitmap file. biSize only refers to the number of bytes required by the BITMAPINFOHEADER.
+11. If biHeight is negative, the bitmap is top-down, originating from the top-left corner.
+12. biBitCount located at 0x1c with the usual value of 24(18 in hex).
+13. If the file opened is not available for reading or something went wrong while accessing the file.
+14. We only need to read 1 element in the file stream of size size_t.
+15. padding = 3
+16. fseek lets us control the file pointer in the stream to where we would like it to point to.
+17. SEEK_CUR tells us the current position of our pointer in the file stream.
+18. Rob Bowden

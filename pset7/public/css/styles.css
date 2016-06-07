@@ -1,0 +1,234 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+body
+{
+    background: url(../img/bg_2.jpg);
+}
+.container
+{
+    /* center contents */
+    /*margin-left: auto;
+    margin-right: auto;
+    text-align: center;*/
+    margin: 20px auto;
+    max-width: 940px;
+    padding: 0 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+#top a
+{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+#logo{font-weight: bolder;}
+#c{color: #4455ff ;}
+#s{color: #ffaa00;}
+#f{color: #ee4422;}
+#o{color: #66ff11;}
+#finance
+{   
+    text-decoration: none; 
+    color: #ffffff; 
+    font-size: 100px;
+    font-family: 'Roboto Condensed';
+}
+#tbl
+{
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #005599;
+   border-top: none;
+   border-bottom: none;
+ }
+ .table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   border-top: none;
+   border-bottom: none;
+ }
+table thead tr
+{
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+}
+table tr
+{
+    text-align: left;
+}
+.logreg
+{
+    text-align: right;
+    top: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 0px;
+    font-family: 'Roboto',  sans-serif;
+}
+.logreg legend
+{
+    color: #fff;
+    font-family: 'Roboto Condensed',  sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    border: 0;
+}
+.logreg form input:focus
+{
+    box-shadow: 0 0 20px #ff9922;
+    transition: .25s;
+}
+.logreg form button
+{
+    font-size: 15px;
+    width: 90px;
+}
+.logreg form button:hover
+{
+    background: #ff9922;
+    border-color: #ffaa00;
+    color: #fff;
+    transition: background .25s;
+}
+.logreg form input
+{
+    color: #555;
+}
+#changepass{text-align: center;}
+
+#quote{margin-top: 30px; margin-bottom: 20px;}
+#quote form input
+{
+    height: 30px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+#quote form input:focus
+{
+    box-shadow: 0 0 20px #ff9922;
+    transition: .25s;
+}
+#quote button
+{
+    font-size: 15px;
+    width: 90px;
+}
+#quote button:hover
+{
+    background: #ff9922;
+    border-color: #ffaa00;
+    color: #fff;
+    transition: background .25s;
+}
+p
+{
+    margin-top: 25px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+p a
+{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+p a:hover
+{
+    color: #ffbb00;
+    text-decoration: none;
+    transition: .2s;
+}
+.sell
+{
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+.sell select, .sell select option
+{
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.sell select:hover
+{
+    box-shadow: 0 0 20px #ff9922;
+    transition: .35s;
+}
+.sell button
+{
+    font-size: 16px; 
+    padding: 5px 15px 5px 15px;
+}
+.sell form button:hover
+{
+    background: #ff9922;
+    border-color: #ffaa00;
+    color: #fff;
+    transition: background .25s;
+}
+.sell form input:focus
+{
+    box-shadow: 0 0 20px #ff9922;
+    transition: .25s;
+}
+#menu ul li
+{
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+#menu li a:hover, li:hover
+{
+    text-decoration: none;
+    color: #ffbf00;
+    transition: .25s;
+}
+#menu li a
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #88bcff;
+}
